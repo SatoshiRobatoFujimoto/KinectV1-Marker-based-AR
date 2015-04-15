@@ -9,13 +9,15 @@
  - Kinect v1 (Kinect for Windows SDK v1.8)
 
 マーカーの実際のサイズを入れてください。9cm×9cmなら0.45fを用います。
-			std::vector<cv::Point3f> markerCorners3d;
-			bool centerOrigin = true;
-			if (centerOrigin)
-			{
-				markerCorners3d.push_back(cv::Point3f(-0.45f, -0.45f, 0));
-				markerCorners3d.push_back(cv::Point3f(+0.45f, -0.45f, 0));
-				markerCorners3d.push_back(cv::Point3f(+0.45f, +0.45f, 0));
-				markerCorners3d.push_back(cv::Point3f(-0.45f, +0.45f, 0));
-			}
+~~~
+std::vector<cv::Point3f> markerCorners3d;
+bool centerOrigin = true;
+if (centerOrigin)
+{
+	markerCorners3d.push_back(cv::Point3f(-0.45f, -0.45f, 0));
+	markerCorners3d.push_back(cv::Point3f(+0.45f, -0.45f, 0));
+	markerCorners3d.push_back(cv::Point3f(+0.45f, +0.45f, 0));
+	markerCorners3d.push_back(cv::Point3f(-0.45f, +0.45f, 0));
+}
+~~~
 
