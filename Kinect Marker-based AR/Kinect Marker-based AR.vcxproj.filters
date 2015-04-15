@@ -24,4 +24,9 @@
       <Filter>Source Files</Filter>
     </Image>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="license.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+  </ItemGroup>
 </Project>
